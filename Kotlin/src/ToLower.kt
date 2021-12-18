@@ -9,9 +9,8 @@ fun main() {
         var godkjent = true
         for (j in 1..info[1].toInt()) {
             val text = tast.nextLine()
-            for (letter in text.substring(1)) {
+            for (letter in text.substring(1))
                 if (letter.isUpperCase()) godkjent = false
-            }
         }
         if (godkjent) total++
     }
