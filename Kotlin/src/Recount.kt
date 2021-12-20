@@ -12,7 +12,7 @@ fun main() {
             null -> oversikt[linje] = 1
             else -> oversikt[linje] = antall + 1
         }
-        // using the double bang-operator because the oversikt[linje] is never null
+        // using the double bang-operator because oversikt[linje] is never null 
         if (oversikt[linje]!! > flestStemmer) {
             flestStemmer = oversikt[linje]!!
             harFlest = linje; toLike = false
