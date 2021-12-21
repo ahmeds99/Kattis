@@ -19,12 +19,12 @@ fun main() {
             graf[kant[0]]?.add(Node(kant[1], kant[2].toInt()))
         }
 
-        val D = Dijkstra(graf, s)
+        val shortestPaths = Dijkstra(graf, s)
         for (i in 0 until q) {
             val slutt = tast.nextLine()
-            when (D[slutt]) {
+            when (shortestPaths[slutt]) {
                 Int.MAX_VALUE -> println("Impossible")
-                else -> println(D[slutt])
+                else -> println(shortestPaths[slutt])
             }
         }
         linje = tast.nextLine()
