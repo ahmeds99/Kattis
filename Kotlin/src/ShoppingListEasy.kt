@@ -14,7 +14,7 @@ fun main() {
     val resultat = ArrayList<String>()
     for ((vare, antall) in felles) {
         if (antall == lister) { // da er varen med i alle lister
-            val indeks = -(resultat.binarySearch(vare) + 1)
+            val indeks = -(resultat.binarySearch(vare) + 1) // to find the right index
             resultat.add(indeks, vare)
         }
     }
